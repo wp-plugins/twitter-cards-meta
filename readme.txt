@@ -37,7 +37,7 @@ You could say there are other process like adding codes manually in your theme h
 
 *   None other solution works perfectly with image. All other plugins only depend on WordPress Attachment. But from our years of experience we have seen image attachment does not work for most of the sites and themes.
 *   Only this plugin will pick image automatically from your post, even its not attached properly. 
-*   Other plugin will mostly use your default image as they cant grab image properly, even "WordPress SEO by Yoast" does the same. But please read the Twitter Cards' [guideline and terms](https://dev.twitter.com/docs/cards) guideline about image. It clearly says 'Do not use a generic image such as your website logo, author photo, or other image that spans multiple pages.' So if you end up using default image for most posts, you will probably never get approved in Twitter Cards.
+*   Other plugin will mostly use your default image as they cant grab image properly, even "WordPress SEO by Yoast" does the same. But please read the Twitter Cards' [guideline and terms](https://dev.twitter.com/docs/cards) about image. It clearly says 'Do not use a generic image such as your website logo, author photo, or other image that spans multiple pages.' So if you end up using default image for most posts, you will probably never get approved in Twitter Cards.
 *   This plugin does the markup in right way, and in right position.
  
 The main thing is we had to make this plugin as other solution did not worked for most of our project. So we have learned from others' limitation, and we come-up with better solution. We will eventually add Photo Card and Player Cards support in the future release. 
