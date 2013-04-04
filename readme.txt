@@ -1,20 +1,20 @@
 === Twitter Cards Meta ===
 Contributors: onetarek, Asif2BD
 Donate link: http://wordpressfoundation.org/donate/
-Tags: Twitter Cards, Twitter Cards Meta, Twitter, Twitter Meta for WordPress, Meta, Add Meta, Add Twitter Meta
+Tags: Twitter Cards, Twitter Cards Meta, Twitter, Twitter Meta for WordPress, Meta, Summary Card, Photo Card, Add Metadata, Add Twitter Meta
 Requires at least: 2.5.0
 Tested up to: 3.5.2
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-The Best and Easiest Way to Add Twitter Cards Metadata in WordPress Site. Enable Twitter Cards for Your Blog at ease.
+The Best and Easiest Way to Add Twitter Cards Metadata in WordPress Site. Enable Summary and Photo Cards Easily, With Control.
 
 == Description ==
 
 [WPDeveloper.net](http://wpdeveloper.net/) brings 'Twitter Cards Meta' for all WordPress user for free. Adding Twitter Cards meta was never this easy. 100% validate meta according to Twitter and get sure approval. Now supports Photo & Summary Cards, Player Card support coming soon.
 
-[Twitter Cards](https://dev.twitter.com/docs/cards) increase your Twitter visibility & Brand value. And with this plugin you don't have to worry about the markup, because its very important to get the markup correct otherwise Twitter will not accept your application.
+[Twitter Cards](http://wpdeveloper.net/free-plugin/twitter-cards-meta/) increase your Twitter visibility & Brand value. And with this plugin you don't have to worry about the markup, because its very important to get the markup correct, otherwise Twitter will not accept your application.
 
 Please read Twitter Cards' detail [guideline and terms](https://dev.twitter.com/docs/cards) before proceed.
 
@@ -47,7 +47,13 @@ You could say there are other process like adding codes manually in your theme h
 *   **New** Only this plugin handles both 'Summary Card' and 'Photo Card' properly.
 *   **New** Only this plugin has the option to select Twitter 'Card Type' per post basis, right from post panel.
 
-The main thing is, we had to make this plugin as other solution did not worked for most of our projects. So we have learned from others' limitation, and we come-up with better solution. We have all ready added Photo Card, will add Player Card support in the future release. 
+The main thing is, we had to make this plugin as other solution did not worked for most of our projects. So we have learned from others' limitation, and we come-up with better solution. We have already added Photo Card and will add Player Card support very soon.
+
+**What Others Saying:**
+
+ABetterUserExperience.com [saying](http://abetteruserexperience.com/2013/04/drive-social-engagement-for-your-content-by-adding-third-party-meta-data-heres-how/)
+
+"*...Yoast isn’t really a fully functional implementation of the Twitter Card standard. To my knowledge, it doesn’t take into account, for example, pictures or videos... And the plugin that’s best to use it called Twitter Cards Meta by WPdeveloper. The plugin couldn’t be easier. Install it and just fill out a few fields and that’s it.*"
 
 == Installation ==
 
@@ -67,6 +73,8 @@ The main thing is, we had to make this plugin as other solution did not worked f
 2. Follow the easy steps from the plugin Setting page **sidebar**.
 
 You are good to go! 
+
+**For more detail guide you should follow [this](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab2) page.**
 
 
 
@@ -88,7 +96,7 @@ Yes, check [this page](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#ta
 
 Use plugin support button in WordPress.org extended listing.
 
-
+More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 == Screenshots ==
 
@@ -101,6 +109,9 @@ Use plugin support button in WordPress.org extended listing.
 
 
 == Changelog ==
+
+= 1.1.1 =
+* Bug Fix: Thanks to user 'Joshua Goodwin' for his ticket[#1681](http://plugins.trac.wordpress.org/ticket/1681). The php 'short-open tag' issue has been resolved.
 
 = 1.1.0 =
 * Enhancement: Photo Card support added
@@ -116,11 +127,16 @@ Use plugin support button in WordPress.org extended listing.
 
 == Upgrade Notice ==
 
+= 1.1.1 =
+* There was a php 'short-open tag' bug in previous version. It was not critical issue, and only very small group of user could have issue. But we are releasing update to keep everyone 100% bug free.
+
+
 = 1.1.0 =
 * A major update, brings most awaiting feature like 'Photo Card' support. Now you can control card type in per post basis and site-wide too. Better Image handling with both Featured and Attached image support.
 
+
 = 1.0.0 =
-# Initial release
+* Initial release
 
 
 == Donation ==
