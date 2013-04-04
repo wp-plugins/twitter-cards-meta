@@ -100,11 +100,11 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 == Screenshots ==
 
-1. Live Example Of Summary Card (Using this Plugin)
-2. Option Page
-3. Example Meta tags Output
-4. Twitter Preview Tool Example Using This Plugin
-5. Example Photo Card Preview Using This Plugin 
+1. Live Summary Card Example
+2. Live Photo Card Example
+3. Option Page
+4. Twitter Preview Tool Example
+5. Example Meta tags Output
 
 
 
@@ -112,6 +112,8 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 = 1.1.1 =
 * Bug Fix: Thanks to user 'Joshua Goodwin' for his ticket[#1681](http://plugins.trac.wordpress.org/ticket/1681). The php 'short-open tag' issue has been resolved.
+* Screenshots updated
+* Minor instruction set update.
 
 = 1.1.0 =
 * Enhancement: Photo Card support added
