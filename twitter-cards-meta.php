@@ -2,7 +2,7 @@
 /*
  * Plugin Name: Twitter Cards Meta
  * Plugin URI: http://wpdeveloper.net/free-plugin/twitter-cards-meta/
- * Description: The Best and Easiest Way to Add Twitter Cards Metadata in WordPress Site. Enable Summary and Photo Cards Easily, With Control.
+ * Description: The Best Way to Add Twitter Cards Metadata in WordPress Site. Enable Summary and Photo Cards Easily, With Control.
  * Version: 1.1.1
  * Author: WPDeveloper.net
  * Author URI: http://wpdeveloper.net

@@ -8,7 +8,7 @@ Stable tag: 1.1.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-The Best and Easiest Way to Add Twitter Cards Metadata in WordPress Site. Enable Summary and Photo Cards Easily, With Control.
+The Best Way to Add Twitter Cards Metadata in WordPress Site. Enable Summary and Photo Cards Easily, With Control.
 
 == Description ==
 
