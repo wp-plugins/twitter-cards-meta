@@ -53,7 +53,7 @@ The main thing is, we had to make this plugin as other solution did not worked f
 
 ABetterUserExperience.com [saying](http://abetteruserexperience.com/2013/04/drive-social-engagement-for-your-content-by-adding-third-party-meta-data-heres-how/)
 
-"*...Yoast isn’t really a fully functional implementation of the Twitter Card standard. To my knowledge, it doesn’t take into account, for example, pictures or videos... And the plugin that’s best to use it called Twitter Cards Meta by WPdeveloper. The plugin couldn’t be easier. Install it and just fill out a few fields and that’s it.*"
+"*...Yoast isn't really a fully functional implementation of the Twitter Card standard. To my knowledge, it doesn't take into account, for example, pictures or videos... And the plugin that's best to use it called Twitter Cards Meta by WPdeveloper. The plugin couldn't be easier. Install it and just fill out a few fields and that's it.*"
 
 == Installation ==
 
