@@ -111,7 +111,7 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 == Changelog ==
 
 = 1.1.2 =
-* Bug Fix: Thanks to user 't3g' for his support topic (http://wordpress.org/support/topic/excessive-whitespace-prior-to-description). twitter:description tag has a lot of whitespace before the description text
+* Bug Fix: Thanks to user 't3g' for his [support topic](http://wordpress.org/support/topic/excessive-whitespace-prior-to-description). twitter:description tag has a lot of whitespace before the description text
 
 = 1.1.1 =
 * Bug Fix: Thanks to user 'Joshua Goodwin' for his ticket[#1681](http://plugins.trac.wordpress.org/ticket/1681). The php 'short-open tag' issue has been resolved.
