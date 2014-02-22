@@ -113,8 +113,10 @@ function twcm_get_description()
 	//$desc=apply_filters('the_content',$post->post_content);#using this method to keep shortcode gentrated texts.
 	//$desc=get_the_content(); 
 	}
-	//$desc=strip_tags( $desc );
-	$desc=wp_filter_nohtml_kses( $desc ); #smililar with strip_tags() function
+	$desc=strip_tags( $desc );
+	
+	//$desc=wp_filter_nohtml_kses( $desc ); #smililar with strip_tags() function
+	$desc=esc_attr($desc);
 	$desc = trim(preg_replace("/\s+/", " ", $desc)); #to maintain a space between words in description. Since version 1.1.2
 	$desc=twcm_sub_string($desc, 200);
 	return $desc;

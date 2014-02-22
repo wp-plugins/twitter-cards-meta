@@ -41,15 +41,15 @@ function twcm_options_page()
 	update_option('twcm_options',$options);
 	$twcm_options=$options;
 	}#end if(isset($_POST['save_options']))
-	
-	
-	echo "<div style=\"width: 1010px; padding-left: 10px;\" class=\"wrap\">";
-		echo "<div style=\"width: 700px; float:left;\">";
-		echo '<div id="icon-options-general" class="icon32"></div>';
-		echo "<h2>Twitter Cards Meta Options</h2>";
-		//oneTarek
-		global $current_user;
-		?>
+	//oneTarek
+	global $current_user;	
+	?>
+	 <div style="width: 1010px; padding-left: 10px;" class="wrap">
+		 <div style="width: 700px; float:left;">
+		 <div id="icon-options-general" class="icon32"></div>
+		 <h2>Twitter Cards Meta Options</h2>
+
+		
 			<script type="text/ecmascript">
             	function show_custom_field_name_row()
 				{
@@ -99,7 +99,7 @@ function twcm_options_page()
             </form>
            
             
-            <div style=" text-align:center; margin-top:60px;"><a target="_blank" href="http://wpdeveloper.net"><img src="<?php echo TWCM_PLUGIN_URL."/wpdevlogo.png" ?>" /></a></div>
+            <div style=" text-align:center; margin-top:60px;">Recommended Plugin for You<br /><a target="_blank" href="https://wordpress.org/plugins/wp-author-report-free/"><img style="border:2px solid #ffffff;" src="<?php echo TWCM_PLUGIN_URL."/wp-author-report-banner.png" ?>" alt="WP Author Report" /></a></div>
 <?php
 		
 		echo "</div>";

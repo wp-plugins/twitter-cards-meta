@@ -1,4 +1,5 @@
 <div style="float:right; width:300px; min-height:400px; margin-top:50px;">
+<a class='button-primary' href="http://wpdeveloper.net/free-plugin/twitter-cards-meta/" target="_blank">Plugin Homepage</a>  <a  class='button-primary' style="color:#FFF600;" href="http://wordpress.org/support/view/plugin-reviews/twitter-cards-meta" target="_blank">Rate This Plugin</a>
 <table class="widefat">
 	<thead>
 		<tr><th>To Enable Twitter Cards<th></tr>
