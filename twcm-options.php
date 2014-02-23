@@ -99,7 +99,7 @@ function twcm_options_page()
             </form>
            
             
-            <div style=" text-align:center; margin-top:60px;">Recommended Plugin for You<br /><a target="_blank" href="https://wordpress.org/plugins/wp-author-report-free/"><img style="border:2px solid #ffffff;" src="<?php echo TWCM_PLUGIN_URL."/wp-author-report-banner.png" ?>" alt="WP Author Report" /></a></div>
+            <div style=" text-align:center; margin-top:60px;">Recommended Plugin for You<br /><a target="_blank" href="https://wordpress.org/plugins/wp-author-report-free/"><img style="border:2px solid #ffffff;" src="<?php echo TWCM_PLUGIN_URL."/wp-author-report-banner.png" ?>" width="690" alt="WP Author Report" /></a></div>
 <?php
 		
 		echo "</div>";

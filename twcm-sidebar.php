@@ -27,7 +27,7 @@
 	<tbody>
 		<td>
 		<ul>
-		<li><a href="http://wpdeveloper.net" target="_blank">Home Page</a></li>
+		<li><a href="http://wpdeveloper.net" target="_blank">WPdeveloper.net</a></li>
 		<li><a href="http://wpdeveloper.net/free-plugin/twitter-cards-meta/" target="_blank">Plugin Home</a></li>
                 <li><a href="http://wpdeveloper.net/support" target="_blank">Support Page</a></li>
 		<!--<li><a href="http://wpdeveloper.net/support" target="_blank">Support Forums</a></li>-->
@@ -66,7 +66,7 @@
 		<ul>
 		<li><a href="https://www.facebook.com/pages/WPDeveloper/369302593089958" target="_blank">Facebook</a></li>
 		<li><a href="https://twitter.com/WPDevTeam" target="_blank">Twitter</a></li>
-		<li><a href="https://plus.google.com/u/0/b/105856039924825454662/" target="_blank">Google+</a></li>
+		<li><a href="https://www.google.com/+WpdeveloperNet" target="_blank">Google+</a></li>
 		</ul>	
 		</td>
 	</tbody>
