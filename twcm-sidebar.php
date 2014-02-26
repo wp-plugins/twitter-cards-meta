@@ -2,7 +2,7 @@
 <a class='button-primary' href="http://wpdeveloper.net/free-plugin/twitter-cards-meta/" target="_blank">Plugin Homepage</a>  <a  class='button-primary' style="color:#FFF600;" href="http://wordpress.org/support/view/plugin-reviews/twitter-cards-meta" target="_blank">Rate This Plugin</a>
 <table class="widefat">
 	<thead>
-		<tr><th>To Enable Twitter Cards<th></tr>
+		<tr><th>To Enable Twitter Cards:<th></tr>
 	</thead>
 	<tbody>
 		<td>
@@ -10,8 +10,12 @@
             <ol>
             <li>Activate the Plugin</li>
             <li>Configure the Options</li>
-            <li><a href="https://dev.twitter.com/docs/cards/preview" target="_blank">Preview your Markup at Twitter</a></li>
-            <li><a href="https://dev.twitter.com/form/participate-twitter-cards" target="_blank">Apply to participate in Twitter Cards</a></li>
+            <li><a href="https://dev.twitter.com/docs/cards/validation/validator" target="_blank">Head towards Twitter Validation Page</a></li>
+            <li>Select a Card Type</li>
+            <li>Input a single post url, click "Go" and check preview</li>
+            <li>If all looks fine, apply for Approval</li>
+            <li>You will get email when Twitter approves your request*.</li>
+             *It could take 24-72hr
             </ol>
             <center><b><a href="http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab2" target="_blank">Complete Twitter Cards Setup Guide</a></b></center>
 		</td>
@@ -64,7 +68,7 @@
 	<tbody>
 		<td>
 		<ul>
-		<li><a href="https://www.facebook.com/pages/WPDeveloper/369302593089958" target="_blank">Facebook</a></li>
+		<li><a href="https://www.facebook.com/WPDeveloperNet" target="_blank">Facebook</a></li>
 		<li><a href="https://twitter.com/WPDevTeam" target="_blank">Twitter</a></li>
 		<li><a href="https://www.google.com/+WpdeveloperNet" target="_blank">Google+</a></li>
 		</ul>	
