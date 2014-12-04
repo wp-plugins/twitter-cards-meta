@@ -3,7 +3,7 @@ Contributors: onetarek, Asif2BD
 Donate link: http://wordpressfoundation.org/donate/
 Tags: Twitter Cards, Twitter Cards Meta, Twitter, Twitter Meta for WordPress, Meta, Summary Card, Photo Card, Add Metadata, Add Twitter Meta
 Requires at least: 2.5.0
-Tested up to: 4.0
+Tested up to: 4.0.1
 Stable tag: 1.1.3
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

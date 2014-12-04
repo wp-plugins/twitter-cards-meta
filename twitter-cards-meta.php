@@ -9,7 +9,7 @@
  * License: GPLv2+
  * Text Domain: twitter-cards-meta
  * Min WP Version: 2.5.0
- * Max WP Version: 3.9.0
+ * Max WP Version: 4.0.1
  */
 
 
