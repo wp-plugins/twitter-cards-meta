@@ -10,7 +10,7 @@
             <ol>
             <li>Activate the Plugin</li>
             <li>Configure the Options</li>
-            <li><a href="https://dev.twitter.com/docs/cards/validation/validator" target="_blank">Head towards Twitter Validation Page</a></li>
+            <li><a href="https://cards-dev.twitter.com/validator" target="_blank">Click Here For Twitter Validation Page</a></li>
             <li>Select a Card Type</li>
             <li>Input a single post url, click "Go" and check preview</li>
             <li>If all looks fine, apply for Approval</li>
