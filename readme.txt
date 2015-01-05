@@ -1,14 +1,14 @@
 === Twitter Cards Meta ===
 Contributors: onetarek, Asif2BD
 Donate link: http://wordpressfoundation.org/donate/
-Tags: Twitter Cards, Summary Card, Photo Card, WordPress To Twitter, Twitter SEO, Twitter Cards Meta, Twitter, Twitter Meta for WordPress, Meta,  Add Metadata, Add Twitter Meta, Social
+Tags: Twitter Cards, Summary Card, Photo Card, WordPress To Twitter, Twitter SEO, Twitter Cards Meta, Twitter, Yoast, Twitter Meta for WordPress, Meta,  Add Metadata, Add Twitter Meta, Social
 Requires at least: 2.5.0
 Tested up to: 4.1
 Stable tag: 1.1.3
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-The Best Way to Add Twitter Cards Metadata in WordPress Site. Enable Summary and Photo Cards Easily, With Control.
+Enable Twitter Photo Card and Summary Cards Easily in Your WordPress Site. Control The Way Your Site Looks in Twitter.
 
 == Description ==
 
@@ -110,6 +110,10 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 == Changelog ==
 
+= 1.1.4 (January 5, 2015) =
+* Twitter Validation Link updated
+* Compatible with WordPress 4.1
+
 = 1.1.3 (February 26, 2014) =
 * Twitter Validation process updated
 * Better Image handeling
@@ -131,32 +135,20 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 * Enhancement: Ability to change site-wide Card Type in just one-click
 * Enhancement: Ability To override individual post Card Type selection.
 
-
 = 1.0.0 =
 * Initial release
+
+
 
 
 == Upgrade Notice ==
 
-= 1.1.3 =
-* Twitter Validation process updated
-* Better Image handeling
-* Better "twitter:description" handeling, either from excerpt or auto.
-* Solve all bug reported so far.
-
-= 1.1.2 =
-* Bug Fix: In case of some blogs twitter:description tag shows a lot of whitespace before the description text.
-
-= 1.1.1 =
-* There was a php 'short-open tag' bug in previous version. It was not critical issue, and only very small group of user could have issue. But we are releasing update to keep everyone 100% bug free.
+= 1.1.4 =
+* Twitter Validation link updated
+* Compatible with WordPress 4.1
+Must have updates.
 
 
-= 1.1.0 =
-* A major update, brings most awaiting feature like 'Photo Card' support. Now you can control card type in per post basis and site-wide too. Better Image handling with both Featured and Attached image support.
-
-
-= 1.0.0 =
-* Initial release
 
 
 == Donation ==
