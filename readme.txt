@@ -4,7 +4,7 @@ Donate link: http://wordpressfoundation.org/donate/
 Tags: Twitter Cards, Summary Card, Photo Card, WordPress To Twitter, Twitter SEO, Twitter Cards Meta, Twitter, Yoast, Twitter Meta for WordPress, Meta,  Add Metadata, Add Twitter Meta, Social
 Requires at least: 2.5.0
 Tested up to: 4.1
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
