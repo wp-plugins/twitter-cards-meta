@@ -1,10 +1,10 @@
 === Twitter Cards Meta ===
-Contributors: onetarek, Asif2BD
+Contributors: Asif2BD, onetarek
 Donate link: http://wordpressfoundation.org/donate/
-Tags: Twitter Cards, Summary Card, Photo Card, WordPress To Twitter, Twitter SEO, Twitter Cards Meta, Twitter, Yoast, Twitter Meta for WordPress, Meta,  Add Metadata, Add Twitter Meta, Social
+Tags: Twitter Cards, Summary Card, Photo Card, Twitter SEO, Twitter Cards Meta, Twitter, Yoast, Player Cards, Product Cards, Meta,  Add Metadata, Add Twitter Meta, Social
 Requires at least: 2.5.0
 Tested up to: 4.1
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -110,6 +110,11 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 == Changelog ==
 
+
+= 1.1.5 (January 12, 2015) =
+* Twitter Validation process update
+* Plugin restructure starts with this version, extension coming soon with Player Cards & Photo Cards.
+
 = 1.1.4 (January 5, 2015) =
 * Twitter Validation Link updated
 * Compatible with WordPress 4.1
@@ -143,10 +148,8 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 == Upgrade Notice ==
 
-= 1.1.4 =
-* Twitter Validation link updated
-* Compatible with WordPress 4.1
-Must have updates.
+= 1.1.5 =
+* Plugin restructure starts with this version, extension coming soon with Player Cards & Photo Cards.
 
 
 

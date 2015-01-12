@@ -1,5 +1,5 @@
 <div style="float:right; width:300px; min-height:400px; margin-top:50px;">
-<a class='button-primary' href="http://wpdeveloper.net/free-plugin/twitter-cards-meta/" target="_blank">Plugin Homepage</a>  <a  class='button-primary' style="color:#FFF600;" href="http://wordpress.org/support/view/plugin-reviews/twitter-cards-meta" target="_blank">Rate This Plugin</a>
+<a class='button-primary' href="http://wpdeveloper.net/free-plugin/twitter-cards-meta/" target="_blank">Plugin Homepage</a>  <a  class='button-primary' style="color:#FFF600;" href="http://wpdeveloper.net/go/twmc-rating" target="_blank">Rate This Plugin</a>
 <table class="widefat">
 	<thead>
 		<tr><th>To Enable Twitter Cards:<th></tr>
@@ -15,7 +15,7 @@
             <li>Input a single post url, click "Go" and check preview</li>
             <li>If all looks fine, apply for Approval</li>
             <li>You will get email when Twitter approves your request*.</li>
-             *It could take 24-72hr
+             *It could take 01-48hr
             </ol>
             <center><b><a href="http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab2" target="_blank">Complete Twitter Cards Setup Guide</a></b></center>
 		</td>
