@@ -3,7 +3,7 @@
  * Plugin Name: Twitter Cards Meta
  * Plugin URI: http://wpdeveloper.net/free-plugin/twitter-cards-meta/
  * Description: Enable Twitter Photo Card and Summary Cards Easily in Your WordPress Site. Control The Way Your Site Looks in Twitter. Stay Modern, Upto Date For 2015!
- * Version: 1.1.5
+ * Version: 1.1.6
  * Author: WPDeveloper.net
  * Author URI: http://wpdeveloper.net
  * License: GPLv2+
@@ -62,13 +62,13 @@ $twcm_options=twcm_get_options();
 		?>
 
 <!-- Twitter Cards Meta By WPDeveloper.net -->
-<meta name="twitter:card" value="<?php echo $twitter_card_type ?>"/>
-<meta name="twitter:site" value="@<?php echo $site_twitter_username;?>" />
-<meta name="twitter:creator" value="@<?php echo $creator_twitter_username; ?>" />
-<meta name="twitter:url" value="<?php echo $twitter_url; ?>"/>
-<meta name="twitter:title" value="<?php echo $twitter_title;?>"/>
-<meta name="twitter:description" value="<?php echo twcm_get_description(); ?>"/>
-<meta name="twitter:image" value="<?php echo $twitter_thumbs; ?>" />
+<meta name="twitter:card" content="<?php echo $twitter_card_type ?>" />
+<meta name="twitter:site" content="@<?php echo $site_twitter_username;?>" />
+<meta name="twitter:creator" content="@<?php echo $creator_twitter_username; ?>" />
+<meta name="twitter:url" content="<?php echo $twitter_url; ?>" />
+<meta name="twitter:title" content="<?php echo $twitter_title;?>" />
+<meta name="twitter:description" content="<?php echo twcm_get_description(); ?>" />
+<meta name="twitter:image" content="<?php echo $twitter_thumbs; ?>" />
 <!-- Twitter Cards Meta By WPDeveloper.net -->
 
 		<?php
@@ -80,13 +80,13 @@ $twcm_options=twcm_get_options();
 	?>
 
 <!-- Twitter Cards Meta By WPDeveloper.net -->
-<meta name="twitter:card" value="<?php echo $twcm_options['default_card_type'];?>"/>
-<meta name="twitter:site" value="@<?php echo $twcm_options['site_twitter_username'];?>" />
-<meta name="twitter:creator" value="@<?php echo $twcm_options['site_twitter_username'];?>" />
-<meta name="twitter:url" value="<?php echo get_bloginfo('url'); ?>"/>
-<meta name="twitter:title" value="<?php bloginfo('name'); ?>"/>
-<meta name="twitter:description" value="<?php echo twcm_sub_string(esc_attr($twcm_options['home_page_description'])); ?>"/>
-<meta name="twitter:image" value="<?php echo $twcm_options['default_image']; ?>" />
+<meta name="twitter:card" content="<?php echo $twcm_options['default_card_type'];?>" />
+<meta name="twitter:site" content="@<?php echo $twcm_options['site_twitter_username'];?>" />
+<meta name="twitter:creator" content="@<?php echo $twcm_options['site_twitter_username'];?>" />
+<meta name="twitter:url" content="<?php echo get_bloginfo('url'); ?>" />
+<meta name="twitter:title" content="<?php bloginfo('name'); ?>" />
+<meta name="twitter:description" content="<?php echo twcm_sub_string(esc_attr($twcm_options['home_page_description'])); ?>" />
+<meta name="twitter:image" content="<?php echo $twcm_options['default_image']; ?>" />
 <!-- Twitter Cards Meta By WPDeveloper.net -->
 
     <?php

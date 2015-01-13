@@ -4,7 +4,7 @@ Donate link: http://wordpressfoundation.org/donate/
 Tags: Twitter Cards, Summary Card, Photo Card, Twitter SEO, Twitter Cards Meta, Twitter, Yoast, Player Cards, Product Cards, Meta,  Add Metadata, Add Twitter Meta, Social
 Requires at least: 2.5.0
 Tested up to: 4.1
-Stable tag: 1.1.5
+Stable tag: 1.1.6
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,11 +30,13 @@ Though there are other possible ways to add Twitter Cards metadata but this plug
 *   Possible to add Twitter Cards meta tags even in Home Page.
 *   You could include a custom Description for Home Page.
 *   Though its not a good practice but you could include a default Image, its specially helpful for home page.
-*   **New** Photo Card Support Added.
-*   **New** Ability to select 'Card Type' per post basis or site-wide.
-*   **New** Meta Box in post panel to select individual post's 'Card Type'.
-*   **New** Option to force all posts (old and future posts) to a certain 'Cards Type'. It will override individual post's selection. 
-*   **New** Now Attached and Featured image both work properly and user have the option to select which type of image he wants.
+*   **Photo Card** Support Added.
+*   Ability to select **'Card Type'** per post basis or site-wide.
+*   **Meta Box** in post panel to select individual post's 'Card Type'.
+*   Option to force all posts (old and future posts) to a certain 'Cards Type'. It will override individual post's selection. 
+*   Now Attached and Featured image both work properly and user have the option to select which type of image he wants.
+*   **New** Validate 100% with W3C Markup Validation Service!
+*   **Extension** coming soon with more feature
 
 **Why Twitter Cards Meta is The Best Solution?**
 
@@ -111,6 +113,10 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 == Changelog ==
 
 
+= 1.1.6 (January 13, 2015) =
+* Now validate 100% with W3C Markup Validation Service. Thanks to the [support ticket](https://wordpress.org/support/topic/w3c-invalid-markup?replies=1) by user [mcpainter02](https://wordpress.org/support/profile/mcpainter02)
+* Major update in Twitter Meta markup. **Must Update**
+
 = 1.1.5 (January 12, 2015) =
 * Twitter Validation process update
 * Plugin restructure starts with this version, extension coming soon with Player Cards & Photo Cards.
@@ -148,9 +154,8 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 == Upgrade Notice ==
 
-= 1.1.5 =
-* Plugin restructure starts with this version, extension coming soon with Player Cards & Photo Cards.
-
+= 1.1.6 =
+* **Must Update**. Major update in Twitter Meta Markup, read the changelog details. 
 
 
 
