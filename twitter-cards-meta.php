@@ -2,14 +2,14 @@
 /*
  * Plugin Name: Twitter Cards Meta
  * Plugin URI: http://wpdeveloper.net/free-plugin/twitter-cards-meta/
- * Description: Enable Twitter Photo Card and Summary Cards Easily in Your WordPress Site. Control The Way Your Site Looks in Twitter. Stay Modern, Upto Date For 2015!
- * Version: 1.1.6
+ * Description: Best Twitter Cards Plugin in WordPress. Get Modern Twitter Design For More Retweet & Clicks. Free, 30-sec Setup, Free Support.
+ * Version: 1.1.7
  * Author: WPDeveloper.net
  * Author URI: http://wpdeveloper.net
  * License: GPLv2+
  * Text Domain: twitter-cards-meta
  * Min WP Version: 2.5.0
- * Max WP Version: 4.1
+ * Max WP Version: 4.2
  */
 
 
@@ -279,30 +279,30 @@ add_action('save_post', 'twcm_save_post_page_metabox');
 
 /* Display a notice that can be dismissed */
 
-add_action('admin_notices', 'twcm_admin_notice');
+add_action('admin_notices', 'twcm_admin_notice1');
 
-function twcm_admin_notice() {
+function twcm_admin_notice1() {
 if ( current_user_can( 'install_plugins' ) )
    {
 	global $current_user ;
         $user_id = $current_user->ID;
         /* Check that the user hasn't already clicked to ignore the message */
-	if ( ! get_user_meta($user_id, 'twcm_ignore_notice') ) {
+	if ( ! get_user_meta($user_id, 'twcm_ignore_notice1') ) {
         echo '<div class="updated"><p>'; 
-        printf(__('Thanks! We hope you loved <a href="http://wpdeveloper.net/go/twcm-free" target="_blank"><b>Twitter Cards Meta</b></a>, consider <a href="http://wpdeveloper.net/go/twmc-rating" target="_blank">Rating</a> us. Check our newest free plugin <a href="http://wpdeveloper.net/go/analytify-home" target="_blank"><b>Analytify</b></a>, brings Google Analytics Dashboard inside WordPress. | <a href="%1$s">Hide Notice</a>'), '?twcm_nag_ignore=0');
+        printf(__('Thanks for using Free <a href="http://wpdeveloper.net/go/twcm-free" target="_blank"><b>Twitter Cards Meta</b></a>, consider <a href="http://wpdeveloper.net/go/twmc-rating" target="_blank">Rating</a> us. Do you know you could customize your <b>Facebook feed</b> too with our newest plugin <a href="http://wpdeveloper.net/go/FSMviaTCM" target="_blank"><b>Facebook Secret Meta</b></a>? <a href="http://wpdeveloper.net/go/FSMviaTCM" target="_blank">Must Check</a>! | <a href="%1$s">[Hide Notice]</a>'), '?twcm_nag_ignore1=0');
         echo "</p></div>";
 	}
     }
 }
 
-add_action('admin_init', 'twcm_nag_ignore');
+add_action('admin_init', 'twcm_nag_ignore1');
 
-function twcm_nag_ignore() {
+function twcm_nag_ignore1() {
 	global $current_user;
         $user_id = $current_user->ID;
         /* If user clicks to ignore the notice, add that to their user meta */
-        if ( isset($_GET['twcm_nag_ignore']) && '0' == $_GET['twcm_nag_ignore'] ) {
-             add_user_meta($user_id, 'twcm_ignore_notice', 'true', true);
+        if ( isset($_GET['twcm_nag_ignore1']) && '0' == $_GET['twcm_nag_ignore1'] ) {
+             add_user_meta($user_id, 'twcm_ignore_notice1', 'true', true);
 	}
 }
 

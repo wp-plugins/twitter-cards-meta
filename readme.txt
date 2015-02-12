@@ -1,14 +1,14 @@
 === Twitter Cards Meta ===
 Contributors: Asif2BD, onetarek
-Donate link: http://wordpressfoundation.org/donate/
-Tags: Twitter Cards, Summary Card, Photo Card, Twitter SEO, Twitter Cards Meta, Twitter, Yoast, Player Cards, Product Cards, Meta,  Add Metadata, Add Twitter Meta, Social
+Donate link: http://wpdeveloper.net/go/FSMProDetails
+Tags: Twitter Cards, Summary Card, Photo Card, Twitter SEO, Twitter Meta, Twitter, Yoast, Player Cards, Product Cards, Meta,  Add Metadata, Add Twitter Meta, Social
 Requires at least: 2.5.0
-Tested up to: 4.1
-Stable tag: 1.1.6
+Tested up to: 4.2
+Stable tag: 1.1.7
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Enable Twitter Photo Card and Summary Cards Easily in Your WordPress Site. Control The Way Your Site Looks in Twitter.
+Best Twitter Cards Plugin in WordPress. Get Modern Twitter Design For More Retweet & Clicks. Free, 30-sec Setup, Free Support.
 
 == Description ==
 
@@ -112,6 +112,8 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 == Changelog ==
 
+= 1.1.7 (February 12, 2015) =
+* Minor bug fix, tested upto WordPress 4.2 Beta 
 
 = 1.1.6 (January 13, 2015) =
 * Now validate 100% with W3C Markup Validation Service. Thanks to the [support ticket](https://wordpress.org/support/topic/w3c-invalid-markup?replies=1) by user [mcpainter02](https://wordpress.org/support/profile/mcpainter02)
@@ -154,8 +156,8 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 == Upgrade Notice ==
 
-= 1.1.6 =
-* **Must Update**. Major update in Twitter Meta Markup, read the changelog details. 
+= 1.1.7 =
+Minor bug fix, tested upto WordPress 4.2 Beta  
 
 
 
@@ -163,4 +165,4 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 You may donate to WordPress Foundation.
 
-http://wordpressfoundation.org/donate/
+http://wpdeveloper.net/go/FSMProDetails

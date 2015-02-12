@@ -83,7 +83,8 @@ function twcm_options_page()
             	Twitter Cards Type Selection: </td><td>
             	<input type="radio" name="default_card_type" id="default_card_type_1" value="summary" <?php echo ($twcm_options['default_card_type']=='summary')?' checked="checked"': '';?> /> <label for="default_card_type_1">Summary Cards</label><br />
                 <input type="radio" name="default_card_type" id="default_card_type_2" value="photo" <?php echo ($twcm_options['default_card_type']=='photo')?' checked="checked"': '';?> /> <label for="default_card_type_2"> Photo Cards </label><br />
-                <input type="radio" name="default_card_type" id="default_card_type_3" value="player" <?php echo ($twcm_options['default_card_type']=='player')?' checked="checked"': '';?> disabled="disabled" /> <label for="default_card_type_3" style="color:#CCCCCC;" > Player Cards (Coming soon in future update, Stay updated)</label>           
+                <input type="radio" name="default_card_type" id="default_card_type_3" value="player" <?php echo ($twcm_options['default_card_type']=='player')?' checked="checked"': '';?> disabled="disabled" /> <label for="default_card_type_3" style="color:#CCCCCC;" > Player Cards </label><br />
+                <input type="radio" name="default_card_type" id="default_card_type_4" value="large-photo" <?php echo ($twcm_options['default_card_type']=='large-photo')?' checked="checked"': '';?> disabled="disabled" /> <label for="default_card_type_4" style="color:#CCCCCC;" > Large Photo Cards (Coming soon in future update, Stay updated)</label>           
             	</td></tr>
 
             <tr><td   align="left"> Description For Home Page :</td><td> <textarea  name="home_page_description" cols="10" rows="4" style="width:300px;" onblur="javascript: if(this.value=='') {this.value='Enter a description for home page, keep it under 200 characters';}"  onclick="javascript: if(this.value=='Enter a description for home page, keep it under 200 characters') {this.value='';}"  ><?php echo ($twcm_options['home_page_description'])? $twcm_options['home_page_description'] :'Enter a description for home page, keep it under 200 characters';?></textarea></td></tr>
@@ -99,7 +100,7 @@ function twcm_options_page()
             </form>
            
             
-            <div style=" text-align:center; margin-top:60px;"><b>Recommended Plugin for You</b><br /><a target="_blank" href="http://wpdeveloper.net/go/analytify-home"><img style="border:2px solid #ffffff;" src="<?php echo TWCM_PLUGIN_URL."/analytify-banners-728.png" ?>" width="690" alt="Analytify - Google Analytics Dashboard" /></a></div>
+            <div style=" text-align:center; margin-top:60px;"><b>Recommended Plugin for You: <a href="http://wpdeveloper.net/go/FSMviaTCM" target="_blank"><b>Facebook Secret Meta</b></a></b><br /><a target="_blank" href="http://wpdeveloper.net/go/FSMviaTCM"><img style="border:2px solid #ffffff;" src="<?php echo TWCM_PLUGIN_URL."/fsm-live-example-1rs.jpg" ?>" width="500" alt="Analytify - Google Analytics Dashboard" /></a></div>
 <?php
 		
 		echo "</div>";
