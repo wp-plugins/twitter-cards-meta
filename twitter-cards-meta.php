@@ -2,8 +2,8 @@
 /*
  * Plugin Name: Twitter Cards Meta
  * Plugin URI: http://wpdeveloper.net/free-plugin/twitter-cards-meta/
- * Description: Best Twitter Cards Plugin in WordPress. Get Modern Twitter Design For More Retweet & Clicks. Free, 30-sec Setup, Free Support.
- * Version: 1.1.7
+ * Description: Best Twitter Cards Plugin in WordPress. Get Modern Twitter Design For More Retweet & Clicks. Free, 30-sec Setup, Free Support. Add cards support via Addons.
+ * Version: 2.0.0
  * Author: WPDeveloper.net
  * Author URI: http://wpdeveloper.net
  * License: GPLv2+
@@ -17,13 +17,17 @@ define("TWCM_PLUGIN_SLUG",'twitter-cards-meta');
 define("TWCM_PLUGIN_URL",plugins_url("",__FILE__ ));#without trailing slash (/)
 define("TWCM_PLUGIN_PATH",plugin_dir_path(__FILE__)); #with trailing slash (/)
 
+define( 'ACTIVE_LARGE_PHOTO', apply_filters( 'active_large_photo', false ) );
+define( 'ACTIVE_WOO_PRODUCT', apply_filters( 'active_woo_product', false ) );
+define( 'ACTIVE_PRODUCT_CARD', apply_filters( 'active_product_card', false ) );
+define( 'ACTIVE_GALLERY_CARD', apply_filters( 'active_gallery_card', false ) );
+
 include_once(TWCM_PLUGIN_PATH.'twcm-options.php');
 include_once(TWCM_PLUGIN_PATH.'wpdev-dashboard-widget.php');
 
 function add_twcm_menu_pages()
-
 {
-add_options_page( "Twitter Cards Meta", "Twitter Cards Meta" ,'manage_options', TWCM_PLUGIN_SLUG, 'twcm_options_page');
+	  add_menu_page( "Twitter Cards Meta", "Twitter Cards" ,'manage_options', TWCM_PLUGIN_SLUG, 'twcm_options_page');
 }
 
 add_action('admin_menu', 'add_twcm_menu_pages'); 
@@ -47,29 +51,36 @@ $twcm_options=twcm_get_options();
 		  {
 			$creator_twitter_username=$twcm_options['site_twitter_username'];
 		  }
+		  
+		  if($twcm_options['use_default_card_type_sitewide']){
+		    $twitter_card_type=$twcm_options['default_card_type'];
+		  }
+		  else{
+		    $twitter_card_type=get_post_meta($post->ID,'_twcm_twitter_card_type',true);
+		    if($twitter_card_type==""){$twitter_card_type=$twcm_options['default_card_type'];}
+		  }
+		  
+		  
+		  
 		  $twitter_url    = get_permalink();
 		  $twitter_title  = get_the_title();
 		  $twitter_thumbs = twcm_get_image();
-	 	  if($twcm_options['use_default_card_type_sitewide'])
-		  {
-		  $twitter_card_type=$twcm_options['default_card_type'];
-		  }
-		  else
-		  {
-		  $twitter_card_type=get_post_meta($post->ID,'_twcm_twitter_card_type',true);
-		  if($twitter_card_type==""){$twitter_card_type=$twcm_options['default_card_type'];}
-		  }	  
+		  
+		  $meta_data_card = '<!-- Twitter Cards Meta By WPDeveloper.net -->
+<meta name="twitter:card" content="'.$twitter_card_type.'" />
+<meta name="twitter:site" content="@'.$site_twitter_username.'" />
+<meta name="twitter:creator" content="@'.$creator_twitter_username.'" />
+<meta name="twitter:url" content="'.$twitter_url.'" />
+<meta name="twitter:title" content="'.$twitter_title.'" />
+<meta name="twitter:description" content="'.twcm_get_description().'" />
+<meta name="twitter:image" content="'.$twitter_thumbs.'" />
+<!-- Twitter Cards Meta By WPDeveloper.net -->
+';
+	 	  	
+		    echo apply_filters( 'tc_final_meta_data', $meta_data_card, $twitter_card_type, $site_twitter_username, $creator_twitter_username, $twitter_url, $twitter_title, twcm_get_description(), $twitter_thumbs );
+			  
 		?>
 
-<!-- Twitter Cards Meta By WPDeveloper.net -->
-<meta name="twitter:card" content="<?php echo $twitter_card_type ?>" />
-<meta name="twitter:site" content="@<?php echo $site_twitter_username;?>" />
-<meta name="twitter:creator" content="@<?php echo $creator_twitter_username; ?>" />
-<meta name="twitter:url" content="<?php echo $twitter_url; ?>" />
-<meta name="twitter:title" content="<?php echo $twitter_title;?>" />
-<meta name="twitter:description" content="<?php echo twcm_get_description(); ?>" />
-<meta name="twitter:image" content="<?php echo $twitter_thumbs; ?>" />
-<!-- Twitter Cards Meta By WPDeveloper.net -->
 
 		<?php
       
@@ -165,7 +176,7 @@ function twcm_get_image()
 	  ob_start();
 	  ob_end_clean();
 	  $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
-	  $image = $matches [1] [0];	  
+	  $image = isset($matches [1] [0]) ? $matches [1] [0] : '';	  
 	}
 	if($image==""){$image=$twcm_options['default_image'];}
 	return $image;
@@ -231,7 +242,7 @@ function twcm_add_meta_boxes()
 	$post_types = array_diff($post_types,$rempost);
 	foreach($post_types as $post_type)
 		{
-		add_meta_box('twcm_twitter_card_type', 'Twitter Card Type', 'twcm_card_type_metabox', $post_type, 'side', 'low');
+		add_meta_box('twcm_twitter_card_type', 'Select a Twitter Card Type', 'twcm_card_type_metabox', $post_type, 'normal', 'low');
 		}
 
 }
@@ -245,10 +256,37 @@ global $post;
 	$twitter_card_type=get_post_meta($post->ID,'_twcm_twitter_card_type', true);
 	if($twitter_card_type==""){$twitter_card_type='default';}
 	?>
-	<div style="padding:5px 10px;">
-	<input type="radio" name="twitter_card_type" id="twitter_card_type_default" value="default" <?php echo ($twitter_card_type=="default")?' checked="checked"':''; ?>/> <label for="twitter_card_type_default">Default<span style="color:#CCCCCC"> (<?php echo $twcm_options['default_card_type'];?>)</span></label><br />
-	<input type="radio" name="twitter_card_type" id="twitter_card_type_summary" value="summary" <?php echo ($twitter_card_type=="summary")?' checked="checked"':''; ?>/> <label for="twitter_card_type_summary">Summary</label><br />
-	<input type="radio" name="twitter_card_type" id="twitter_card_type_photo" value="photo" <?php echo ($twitter_card_type=="photo")?' checked="checked"':''; ?>/> <label for="twitter_card_type_photo">Photo</label><br />
+	<div style="padding:5px 10px;" class="tcm_card_options">
+	  <p>
+	<input type="radio" name="twitter_card_type" id="twitter_card_type_default" value="default" <?php echo ($twitter_card_type=="default")?' checked="checked"':''; ?>/> <label for="twitter_card_type_default">Default<span style="color:#CCCCCC"> (<?php echo $twcm_options['default_card_type'];?>)</span></label><br /></p>
+	<p><input type="radio" name="twitter_card_type" id="twitter_card_type_summary" value="summary" <?php echo ($twitter_card_type=="summary")?' checked="checked"':''; ?>/> <label for="twitter_card_type_summary">Summary</label><br /></p>
+	<p><input type="radio" name="twitter_card_type" id="twitter_card_type_photo" value="photo" <?php echo ($twitter_card_type=="photo")?' checked="checked"':''; ?>/> <label for="twitter_card_type_photo">Photo</label><br /></p>
+	
+	<?php do_action( 'tcm_addon_cmb' ); ?>
+	
+	<?php if( ! ACTIVE_LARGE_PHOTO ) { ?>
+	<p><input type="radio" disabled="disabled"/> <label for="twitter_card_type_photo"><a style="color:#CCCCCC;" target="blank" href="http://wpdeveloper.net/go/TCM-SCLI"><b>Summery with Large Photo (available as Addon)</b></a></label><br /></p>
+	<?php } ?>
+
+	<p><a target="blank" href="http://wpdeveloper.net/go/TCM-Addons"><b> All Cards Type Coming Soon</b></a></p>
+	<!--- <?php if( ! ACTIVE_WOO_PRODUCT ) { ?>
+	<p><input type="radio" disabled="disabled"/> <label for="twitter_card_type_photo"><a style="color:#CCCCCC;" target="blank" href="#">Product for WooCommerce (available as premium addon)</a></label><br /></p>
+	<?php } ?>
+	
+	<?php if( ! ACTIVE_PRODUCT_CARD ) { ?>
+	<p><input type="radio" disabled="disabled"/> <label for="twitter_card_type_photo"><a style="color:#CCCCCC;" target="blank" href="#">Product Card (available as premium addon)</a></label><br /></p>
+	<?php } ?>
+	
+	<?php if( ! ACTIVE_GALLERY_CARD ) { ?>
+	<p><input type="radio" disabled="disabled"/> <label for="twitter_card_type_photo"><a style="color:#CCCCCC;" target="blank" href="#">Gallery Card (available as premium addon)</a></label><br /></p>
+	<?php } ?> --->
+	
+	<div class="tcm_addon_extra_field">
+	  <table width="100%">
+		    <?php do_action( 'tcm_addon_extra_field' ); ?>
+	  </table>
+	  
+	</div>
 	<input type="hidden" name="twcm_nonce" value="<?php echo wp_create_nonce('twcm_nonce')?>" />
 	</div>
 	<?php
@@ -287,9 +325,9 @@ if ( current_user_can( 'install_plugins' ) )
 	global $current_user ;
         $user_id = $current_user->ID;
         /* Check that the user hasn't already clicked to ignore the message */
-	if ( ! get_user_meta($user_id, 'twcm_ignore_notice1') ) {
+	if ( ! get_user_meta($user_id, 'twcm_ignore_notice20') ) {
         echo '<div class="updated"><p>'; 
-        printf(__('Thanks for using Free <a href="http://wpdeveloper.net/go/twcm-free" target="_blank"><b>Twitter Cards Meta</b></a>, consider <a href="http://wpdeveloper.net/go/twmc-rating" target="_blank">Rating</a> us. Do you know you could customize your <b>Facebook feed</b> too with our newest plugin <a href="http://wpdeveloper.net/go/FSMviaTCM" target="_blank"><b>Facebook Secret Meta</b></a>? <a href="http://wpdeveloper.net/go/FSMviaTCM" target="_blank">Must Check</a>! | <a href="%1$s">[Hide Notice]</a>'), '?twcm_nag_ignore1=0');
+        printf(__('[Announcement] Twitter <b><a href="http://wpdeveloper.net/go/TCM-SCLI" target="_blank">Summery Card with Large Image</a></b> is now available as addon! Now you could get Large Image + Summery at a time with this new Card. <a href="http://wpdeveloper.net/go/TCM-SCLI" target="_blank">Must Check</a>! | <a href="%1$s">[Hide Notice]</a>'),  admin_url( 'admin.php?page=twitter-cards-meta&twcm_nag_ignore1=0' ));
         echo "</p></div>";
 	}
     }
@@ -302,8 +340,28 @@ function twcm_nag_ignore1() {
         $user_id = $current_user->ID;
         /* If user clicks to ignore the notice, add that to their user meta */
         if ( isset($_GET['twcm_nag_ignore1']) && '0' == $_GET['twcm_nag_ignore1'] ) {
-             add_user_meta($user_id, 'twcm_ignore_notice1', 'true', true);
+             add_user_meta($user_id, 'twcm_ignore_notice20', 'true', true);
 	}
 }
 
-?>
+add_action( 'admin_head', 'tcm_css' );
+function tcm_css() {
+	  ?>
+	  <style>
+	  .tcm_addon_extra_field th{text-align: left; width: 100px;}
+	  .tcm_addon_extra_field > table > tbody > tr{display: none}
+	  .tcm_addon_extra_field input[type=text]{width: 90%}
+	  </style>
+	  <script type="text/javascript">
+	  jQuery(function($) {
+		    $('.tcm_card_options input[type=radio]').click(function() {
+			      var id = $(this).attr('id');
+			      if( ! $('.' + id).is(':visible') ){
+					$('.tcm_addon_extra_field > table > tbody > tr').hide();
+					$('.' + id).show();
+			      }
+		    });
+	  });
+	  </script>
+	  <?php
+}

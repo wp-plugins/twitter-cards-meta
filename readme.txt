@@ -1,22 +1,36 @@
 === Twitter Cards Meta ===
 Contributors: Asif2BD, onetarek
 Donate link: http://wpdeveloper.net/go/FSMProDetails
-Tags: Twitter Cards, Summary Card, Photo Card, Twitter SEO, Twitter Meta, Twitter, Yoast, Player Cards, Product Cards, Meta,  Add Metadata, Add Twitter Meta, Social
+Tags: Twitter Cards, Summary Card, Photo Card, Summary Card with Large Image, Twitter SEO, Twitter Meta, Twitter, Yoast, Player Cards, Product Cards, Meta,  Add Metadata, Add Twitter Meta, Social
 Requires at least: 2.5.0
 Tested up to: 4.2
-Stable tag: 1.1.7
+Stable tag: 2.0.0
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Best Twitter Cards Plugin in WordPress. Get Modern Twitter Design For More Retweet & Clicks. Free, 30-sec Setup, Free Support.
+The Only Complete Twitter Cards Plugin in WordPress. Supports Summary Card with Large Image. Super Easy, Per Post Control. Get Best Out Of Twitter.
 
 == Description ==
 
-[WPDeveloper.net](http://wpdeveloper.net/) brings **Twitter Cards Meta** for all WordPress user for free. Adding Twitter Cards meta was never this easy. 100% validate meta according to Twitter and get sure approval. Now we supports Photo & Summary Cards, Player Card support coming soon.
+[WPDeveloper.net](http://wpdeveloper.net/) brings **[Twitter Cards Meta](http://wpdeveloper.net/go/TCM)** for all WordPress user for free. Adding Twitter Cards meta was never this easy. 100% validate meta according to Twitter and get sure approval within minutes. Most complete Twitter Cards plugin in WordPress
 
 [Twitter Cards](http://wpdeveloper.net/free-plugin/twitter-cards-meta/) increase your Twitter visibility & Brand value. And with this plugin you don't have to worry about the markup, because its very important to get the markup correct, otherwise Twitter will not accept your application.
 
+**Do you know now Twitter provide detail [Analytics](https://analytics.twitter.com/)? To get the analytics you need 'Twitter Cards Meta'.**
+
+
 Please read Twitter Cards' detail [guideline and terms](https://dev.twitter.com/docs/cards) before proceed.
+
+**Supported Card Type:**
+
+*   Summery Card
+*   Photo Card
+*   **[Summery Card with Large Image](http://wpdeveloper.net/go/TCM-SCLI)** (available as Addon)
+*   Products Card (coming within 1 week)
+*   Products Card for WooCommerce (coming soon)
+*   Gallery Card for WooCommerce (coming soon)
+*   App Card for WooCommerce (coming soon)
+*   Player Card for WooCommerce (coming soon)
 
 Though there are other possible ways to add Twitter Cards metadata but this plugin is the best and easiest way for Twitter Cards. We have reasons to believe so, we will explain that at the bottom of this page. Check our feature first.
 
@@ -30,13 +44,16 @@ Though there are other possible ways to add Twitter Cards metadata but this plug
 *   Possible to add Twitter Cards meta tags even in Home Page.
 *   You could include a custom Description for Home Page.
 *   Though its not a good practice but you could include a default Image, its specially helpful for home page.
-*   **Photo Card** Support Added.
+*   **Complete code refactor** 
+*   **Addon supported** 
+*   **Summery Card with Large Image added as Addon** 
+*   Photo Card Support Added.
 *   Ability to select **'Card Type'** per post basis or site-wide.
-*   **Meta Box** in post panel to select individual post's 'Card Type'.
+*   Meta Box in post panel to select individual post's 'Card Type'.
 *   Option to force all posts (old and future posts) to a certain 'Cards Type'. It will override individual post's selection. 
 *   Now Attached and Featured image both work properly and user have the option to select which type of image he wants.
 *   **New** Validate 100% with W3C Markup Validation Service!
-*   **Extension** coming soon with more feature
+
 
 **Why Twitter Cards Meta is The Best Solution?**
 
@@ -102,16 +119,23 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 == Screenshots ==
 
-1. Live Summary Card Example
-2. Live Photo Card Example
-3. Option Page
-4. Twitter Preview Tool Example
-5. Example Meta tags Output
+1. Summery Card with Large Image Example
+2. Summary Card Example
+3. Photo Card Example
+4. Option Page
+5. Twitter Preview Tool Example
 
 
 
 == Changelog ==
 
+= 2.0.0 (March 10, 2015) =
+* Complete Code Refactor
+* Addon Capability Added
+* Summery Card with Large Image available as addon
+* All big fix
+* Better option handle.
+ 
 = 1.1.7 (February 12, 2015) =
 * Minor bug fix, tested upto WordPress 4.2 Beta 
 
@@ -156,8 +180,8 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 == Upgrade Notice ==
 
-= 1.1.7 =
-Minor bug fix, tested upto WordPress 4.2 Beta  
+= 2.0.0 =
+Version 2.0.0 is here with complete code refactor. Addon Capability added, and Summery Card with Large Image available as first addon. All bug fixed. Must update. Enjoy the Modern Twitter benefit!
 
 
 
@@ -165,4 +189,4 @@ Minor bug fix, tested upto WordPress 4.2 Beta
 
 You may donate to WordPress Foundation.
 
-http://wpdeveloper.net/go/FSMProDetails
+http://wpdeveloper.net/go/TCM

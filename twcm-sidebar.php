@@ -26,6 +26,26 @@
 
 <table class="widefat">
 	<thead>
+		<tr><th>Other Twitter Cards Addons<th></tr>
+	</thead>
+	<tbody>
+		<td>
+		<ul>
+		<li><a href="http://wpdeveloper.net/go/TCM-SCLI" target="_blank">Summary Card with Large Image</a></li>
+		<li><a href="http://wpdeveloper.net/go/TCM" target="_blank">Products Card (Coming)</a></li>
+        <li><a href="http://wpdeveloper.net/go/TCM" target="_blank">- For WooCommerce (Coming)</a></li>
+		<li><a href="http://wpdeveloper.net/go/TCM" target="_blank">Photo Gallery Card (Coming)</a></li>
+		<li><a href="http://wpdeveloper.net/go/TCM" target="_blank">Player Card (Coming)</a></li>
+	    <li><a href="http://wpdeveloper.net/go/TCM" target="_blank">App Cards (Coming)</a></li>
+		</ul>	
+		</td>
+	</tbody>
+</table>
+
+<div style="height:10px;"></div>
+
+<table class="widefat">
+	<thead>
 		<tr><th>Developed By WPDeveloper.net<th></tr>
 	</thead>
 	<tbody>
