@@ -28,9 +28,9 @@ Please read Twitter Cards' detail [guideline and terms](https://dev.twitter.com/
 *   **[Summery Card with Large Image](http://wpdeveloper.net/go/TCM-SCLI)** (available as Addon)
 *   Products Card (coming within 1 week)
 *   Products Card for WooCommerce (coming soon)
-*   Gallery Card for WooCommerce (coming soon)
-*   App Card for WooCommerce (coming soon)
-*   Player Card for WooCommerce (coming soon)
+*   Gallery Card (coming soon)
+*   App Card for (coming soon)
+*   Player Card (coming soon)
 
 Though there are other possible ways to add Twitter Cards metadata but this plugin is the best and easiest way for Twitter Cards. We have reasons to believe so, we will explain that at the bottom of this page. Check our feature first.
 
