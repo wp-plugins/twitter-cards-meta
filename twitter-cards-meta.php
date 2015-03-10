@@ -3,7 +3,7 @@
  * Plugin Name: Twitter Cards Meta
  * Plugin URI: http://wpdeveloper.net/free-plugin/twitter-cards-meta/
  * Description: Best Twitter Cards Plugin in WordPress. Get Modern Twitter Design For More Retweet & Clicks. Free, 30-sec Setup, Free Support. Add cards support via Addons.
- * Version: 2.0.0
+ * Version: 2.0.1
  * Author: WPDeveloper.net
  * Author URI: http://wpdeveloper.net
  * License: GPLv2+
@@ -265,7 +265,7 @@ global $post;
 	<?php do_action( 'tcm_addon_cmb' ); ?>
 	
 	<?php if( ! ACTIVE_LARGE_PHOTO ) { ?>
-	<p><input type="radio" disabled="disabled"/> <label for="twitter_card_type_photo"><a style="color:#CCCCCC;" target="blank" href="http://wpdeveloper.net/go/TCM-SCLI"><b>Summery with Large Photo (available as Addon)</b></a></label><br /></p>
+	<p><input type="radio" disabled="disabled"/> <label for="twitter_card_type_photo"><a style="color:#CCCCCC;" target="blank" href="http://wpdeveloper.net/go/TCM-SCLI"><b>Large Photo Summary (available as Addon)</b></a></label><br /></p>
 	<?php } ?>
 
 	<p><a target="blank" href="http://wpdeveloper.net/go/TCM-Addons"><b> All Cards Type Coming Soon</b></a></p>
@@ -325,9 +325,9 @@ if ( current_user_can( 'install_plugins' ) )
 	global $current_user ;
         $user_id = $current_user->ID;
         /* Check that the user hasn't already clicked to ignore the message */
-	if ( ! get_user_meta($user_id, 'twcm_ignore_notice20') ) {
+	if ( ! get_user_meta($user_id, 'twcm_ignore_notice201') ) {
         echo '<div class="updated"><p>'; 
-        printf(__('[Announcement] Twitter <b><a href="http://wpdeveloper.net/go/TCM-SCLI" target="_blank">Summery Card with Large Image</a></b> is now available as addon! Now you could get Large Image + Summery at a time with this new Card. <a href="http://wpdeveloper.net/go/TCM-SCLI" target="_blank">Must Check</a>! | <a href="%1$s">[Hide Notice]</a>'),  admin_url( 'admin.php?page=twitter-cards-meta&twcm_nag_ignore1=0' ));
+        printf(__('<b>[Notice]</b> All the hundreds of user who tried to get <b><a href="http://wpdeveloper.net/go/TCM-SCLI" target="_blank">Summery Card with Large Image</a></b> yesterday, we apologies. We fixed the issue, now you could download it. Increase retweet and clicks from Twitter right-now with this new Card! <a href="http://wpdeveloper.net/go/TCM-SCLI" target="_blank">Must Check</a>! <a href="%1$s">[Hide Notice]</a>'),  admin_url( 'admin.php?page=twitter-cards-meta&twcm_nag_ignore1=0' ));
         echo "</p></div>";
 	}
     }
@@ -340,7 +340,7 @@ function twcm_nag_ignore1() {
         $user_id = $current_user->ID;
         /* If user clicks to ignore the notice, add that to their user meta */
         if ( isset($_GET['twcm_nag_ignore1']) && '0' == $_GET['twcm_nag_ignore1'] ) {
-             add_user_meta($user_id, 'twcm_ignore_notice20', 'true', true);
+             add_user_meta($user_id, 'twcm_ignore_notice201', 'true', true);
 	}
 }
 

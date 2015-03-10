@@ -4,13 +4,15 @@ Donate link: http://wpdeveloper.net/go/FSMProDetails
 Tags: Twitter Cards, Summary Card, Photo Card, Summary Card with Large Image, Twitter SEO, Twitter Meta, Twitter, Yoast, Player Cards, Product Cards, Meta,  Add Metadata, Add Twitter Meta, Social
 Requires at least: 2.5.0
 Tested up to: 4.2
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 The Only Complete Twitter Cards Plugin in WordPress. Supports Summary Card with Large Image. Super Easy, Per Post Control. Get Best Out Of Twitter.
 
 == Description ==
+
+**Twitter [Summary Card with Large Image](http://wpdeveloper.net/go/TCM-SCLI) is here!!!** 
 
 [WPDeveloper.net](http://wpdeveloper.net/) brings **[Twitter Cards Meta](http://wpdeveloper.net/go/TCM)** for all WordPress user for free. Adding Twitter Cards meta was never this easy. 100% validate meta according to Twitter and get sure approval within minutes. Most complete Twitter Cards plugin in WordPress
 
@@ -23,9 +25,9 @@ Please read Twitter Cards' detail [guideline and terms](https://dev.twitter.com/
 
 **Supported Card Type:**
 
-*   Summery Card
+*   Summary Card
 *   Photo Card
-*   **[Summery Card with Large Image](http://wpdeveloper.net/go/TCM-SCLI)** (available as Addon)
+*   **[Summary Card with Large Image](http://wpdeveloper.net/go/TCM-SCLI)** (available as Addon)
 *   Products Card (coming within 1 week)
 *   Products Card for WooCommerce (coming soon)
 *   Gallery Card (coming soon)
@@ -46,7 +48,7 @@ Though there are other possible ways to add Twitter Cards metadata but this plug
 *   Though its not a good practice but you could include a default Image, its specially helpful for home page.
 *   **Complete code refactor** 
 *   **Addon supported** 
-*   **Summery Card with Large Image added as Addon** 
+*   **Summary Card with Large Image added as Addon** 
 *   Photo Card Support Added.
 *   Ability to select **'Card Type'** per post basis or site-wide.
 *   Meta Box in post panel to select individual post's 'Card Type'.
@@ -73,6 +75,11 @@ The main thing is, we had to make this plugin as other solution did not worked f
 ABetterUserExperience.com [saying](http://abetteruserexperience.com/2013/04/drive-social-engagement-for-your-content-by-adding-third-party-meta-data-heres-how/)
 
 "*...Yoast isn't really a fully functional implementation of the Twitter Card standard. To my knowledge, it doesn't take into account, for example, pictures or videos... And the plugin that's best to use it called Twitter Cards Meta by WPdeveloper. The plugin couldn't be easier. Install it and just fill out a few fields and that's it.*"
+
+WPSolver.com [saying](http://www.wpsolver.com/twitter-cards-plugins-wordpress/)
+
+"*Twitter Cards Meta: enables summary and photo cards on your site. You will be able to customize your cards’ settings. It also works for sites with multiple authors."*
+
 
 == Installation ==
 
@@ -119,7 +126,7 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 == Screenshots ==
 
-1. Summery Card with Large Image Example
+1. Summary Card with Large Image Example
 2. Summary Card Example
 3. Photo Card Example
 4. Option Page
@@ -129,10 +136,14 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 == Changelog ==
 
+= 2.0.1 (March 11, 2015) =
+* Quick bug fix, related to saving card type selection in option page and individual posts.
+
+
 = 2.0.0 (March 10, 2015) =
 * Complete Code Refactor
 * Addon Capability Added
-* Summery Card with Large Image available as addon
+* Summary Card with Large Image available as addon
 * All big fix
 * Better option handle.
  
@@ -180,8 +191,8 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 == Upgrade Notice ==
 
-= 2.0.0 =
-Version 2.0.0 is here with complete code refactor. Addon Capability added, and Summery Card with Large Image available as first addon. All bug fixed. Must update. Enjoy the Modern Twitter benefit!
+= 2.0.1 =
+**Must Update** Fix a bug in card type selection. And Version 2.0.0 already brought complete code refactor. Addon Capability added, and Summary Card with Large Image available as first addon. Enjoy the Modern Twitter benefit!
 
 
 
