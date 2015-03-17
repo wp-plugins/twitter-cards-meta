@@ -115,7 +115,7 @@ function twcm_options_page()
             </form>
            
             
-            <div style=" text-align:center; margin-top:60px;"><b>Love Twitter Cards? You must check this new <a href="http://wpdeveloper.net/go/TCM-SCLI" target="_blank"><b>Summery Card with Large Image</b></a></b><br /><a target="_blank" href="http://wpdeveloper.net/go/TCM-SCLI"><img style="border:2px solid #ffffff;" src="<?php echo TWCM_PLUGIN_URL."/example-summary-card-with-large-image.jpg" ?>" width="500" alt="Summery Card with Large Image" /></a></div>
+            <div style=" text-align:center; margin-top:60px;"><b>Love Twitter Cards? You must check this new <a href="http://wpdeveloper.net/go/TCM-PC" target="_blank"><b>Product Card</b></a></b><br /><a target="_blank" href="http://wpdeveloper.net/go/TCM-PC"><img style="border:2px solid #ffffff;" src="<?php echo TWCM_PLUGIN_URL."/example-product-card.jpg" ?>" width="500" alt="Twitter Product Card" /></a></div>
 <?php
 		
 		echo "</div>";

@@ -2,8 +2,8 @@
 /*
  * Plugin Name: Twitter Cards Meta
  * Plugin URI: http://wpdeveloper.net/free-plugin/twitter-cards-meta/
- * Description: Best Twitter Cards Plugin in WordPress. Get Modern Twitter Design For More Retweet & Clicks. Free, 30-sec Setup, Free Support. Add cards support via Addons.
- * Version: 2.0.1
+ * Description: The Only Complete Twitter Cards Plugin in WordPress. Supports Product Card & Summary Card with Large Image. Advance Automated settings. Product Card & Summary Card with Large Image is now available as addon.
+ * Version: 2.0.2
  * Author: WPDeveloper.net
  * Author URI: http://wpdeveloper.net
  * License: GPLv2+
@@ -268,14 +268,15 @@ global $post;
 	<p><input type="radio" disabled="disabled"/> <label for="twitter_card_type_photo"><a style="color:#CCCCCC;" target="blank" href="http://wpdeveloper.net/go/TCM-SCLI"><b>Large Photo Summary (available as Addon)</b></a></label><br /></p>
 	<?php } ?>
 
+	<?php if( ! ACTIVE_PRODUCT_CARD ) { ?>
+	<p><input type="radio" disabled="disabled"/> <label for="twitter_card_type_photo"><a style="color:#CCCCCC;" target="blank" href="http://wpdeveloper.net/go/TCM-PC"><b>Product Card (available as Addon)</b></a></label><br /></p>
+	<?php } ?>
+
 	<p><a target="blank" href="http://wpdeveloper.net/go/TCM-Addons"><b> All Cards Type Coming Soon</b></a></p>
 	<!--- <?php if( ! ACTIVE_WOO_PRODUCT ) { ?>
 	<p><input type="radio" disabled="disabled"/> <label for="twitter_card_type_photo"><a style="color:#CCCCCC;" target="blank" href="#">Product for WooCommerce (available as premium addon)</a></label><br /></p>
 	<?php } ?>
 	
-	<?php if( ! ACTIVE_PRODUCT_CARD ) { ?>
-	<p><input type="radio" disabled="disabled"/> <label for="twitter_card_type_photo"><a style="color:#CCCCCC;" target="blank" href="#">Product Card (available as premium addon)</a></label><br /></p>
-	<?php } ?>
 	
 	<?php if( ! ACTIVE_GALLERY_CARD ) { ?>
 	<p><input type="radio" disabled="disabled"/> <label for="twitter_card_type_photo"><a style="color:#CCCCCC;" target="blank" href="#">Gallery Card (available as premium addon)</a></label><br /></p>
@@ -327,7 +328,7 @@ if ( current_user_can( 'install_plugins' ) )
         /* Check that the user hasn't already clicked to ignore the message */
 	if ( ! get_user_meta($user_id, 'twcm_ignore_notice201') ) {
         echo '<div class="updated"><p>'; 
-        printf(__('<b>[Notice]</b> All the hundreds of user who tried to get <b><a href="http://wpdeveloper.net/go/TCM-SCLI" target="_blank">Summery Card with Large Image</a></b> yesterday, we apologies. We fixed the issue, now you could download it. Increase retweet and clicks from Twitter right-now with this new Card! <a href="http://wpdeveloper.net/go/TCM-SCLI" target="_blank">Must Check</a>! <a href="%1$s">[Hide Notice]</a>'),  admin_url( 'admin.php?page=twitter-cards-meta&twcm_nag_ignore1=0' ));
+        printf(__('<b>[Notice]</b> We are happy to announce <strong><a href="http://wpdeveloper.net/addons/twitter-cards-meta/product-card-addon/" target="_blank">Twitter Product Card</a></strong> addon! This is must have if you are selling something or showcasing any product in <b>Twitter</b>. With <b><a href="http://wpdeveloper.net/go/TCM-SCLI" target="_blank">Summary Card with Large Image </a></b>this is our 2nd addon. <a href="http://wpdeveloper.net/go/TCM-PC" target="_blank">Must Check</a>! <a href="%1$s">[Hide Notice]</a>'),  admin_url( 'admin.php?page=twitter-cards-meta&twcm_nag_ignore1=0' ));
         echo "</p></div>";
 	}
     }
@@ -340,7 +341,7 @@ function twcm_nag_ignore1() {
         $user_id = $current_user->ID;
         /* If user clicks to ignore the notice, add that to their user meta */
         if ( isset($_GET['twcm_nag_ignore1']) && '0' == $_GET['twcm_nag_ignore1'] ) {
-             add_user_meta($user_id, 'twcm_ignore_notice201', 'true', true);
+             add_user_meta($user_id, 'twcm_ignore_notice202', 'true', true);
 	}
 }
 
@@ -354,6 +355,15 @@ function tcm_css() {
 	  </style>
 	  <script type="text/javascript">
 	  jQuery(function($) {
+		    $('.tcm_card_options input[type=radio]').each(function() {
+			      if( $(this).is(':checked') ){
+					var id = $(this).attr('id');
+					if( ! $('.' + id).is(':visible') ){
+						  $('.tcm_addon_extra_field > table > tbody > tr').hide();
+						  $('.' + id).show();
+					}
+			      }
+		    });
 		    $('.tcm_card_options input[type=radio]').click(function() {
 			      var id = $(this).attr('id');
 			      if( ! $('.' + id).is(':visible') ){
