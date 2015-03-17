@@ -326,7 +326,7 @@ if ( current_user_can( 'install_plugins' ) )
 	global $current_user ;
         $user_id = $current_user->ID;
         /* Check that the user hasn't already clicked to ignore the message */
-	if ( ! get_user_meta($user_id, 'twcm_ignore_notice201') ) {
+	if ( ! get_user_meta($user_id, 'twcm_ignore_notice202') ) {
         echo '<div class="updated"><p>'; 
         printf(__('<b>[Notice]</b> We are happy to announce <strong><a href="http://wpdeveloper.net/addons/twitter-cards-meta/product-card-addon/" target="_blank">Twitter Product Card</a></strong> addon! This is must have if you are selling something or showcasing any product in <b>Twitter</b>. With <b><a href="http://wpdeveloper.net/go/TCM-SCLI" target="_blank">Summary Card with Large Image </a></b>this is our 2nd addon. <a href="http://wpdeveloper.net/go/TCM-PC" target="_blank">Must Check</a>! <a href="%1$s">[Hide Notice]</a>'),  admin_url( 'admin.php?page=twitter-cards-meta&twcm_nag_ignore1=0' ));
         echo "</p></div>";
