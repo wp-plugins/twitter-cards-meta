@@ -15,7 +15,7 @@
             <li>Input a single post url, click "Go" and check preview</li>
             <li>If all looks fine, apply for Approval</li>
             <li>You will get email when Twitter approves your request*.</li>
-             *It could take 01-16 hour.
+             *It could take 05min to Few Hr. 
             </ol>
             <center><b><a href="http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab2" target="_blank">Complete Twitter Cards Setup Guide</a></b></center>
 		</td>
@@ -26,17 +26,17 @@
 
 <table class="widefat">
 	<thead>
-		<tr><th>Other Twitter Cards Addons<th></tr>
+		<tr><th>Twitter Cards Meta Addons<th></tr>
 	</thead>
 	<tbody>
 		<td>
 		<ul>
 		<li><a href="http://wpdeveloper.net/go/TCM-SCLI" target="_blank">Summary Card with Large Image</a>(Available)</li>
 		<li><a href="http://wpdeveloper.net/go/TCM-PC" target="_blank">Products Card</a>(Available)</li>
-        <li><a href="http://wpdeveloper.net/go/TCM" target="_blank">- For WooCommerce (Coming)</a></li>
-		<li><a href="http://wpdeveloper.net/go/TCM" target="_blank">Photo Gallery Card (Coming)</a></li>
-		<li><a href="http://wpdeveloper.net/go/TCM" target="_blank">Player Card (Coming)</a></li>
-	    <li><a href="http://wpdeveloper.net/go/TCM" target="_blank">App Cards (Coming)</a></li>
+        <li><a href="http://wpdeveloper.net/go/TCM-Addons" target="_blank">- For WooCommerce (Coming)</a></li>
+		<li><a href="http://wpdeveloper.net/go/TCM-Addons" target="_blank">Photo Gallery Card (Coming)</a></li>
+		<li><a href="http://wpdeveloper.net/go/TCM-Addons" target="_blank">Player Card (Coming)</a></li>
+	    <li><a href="http://wpdeveloper.net/go/TCM-Addons" target="_blank">App Cards (Coming)</a></li>
 		</ul>	
 		</td>
 	</tbody>
@@ -52,11 +52,11 @@
 		<td>
 		<ul>
 		<li><a href="http://wpdeveloper.net" target="_blank">WPdeveloper.net</a></li>
-		<li><a href="http://wpdeveloper.net/free-plugin/twitter-cards-meta/" target="_blank">Plugin Home</a></li>
+		<li><a href="http://wpdeveloper.net/go/TCM" target="_blank">Plugin Home</a></li>
                 <li><a href="http://wpdeveloper.net/support" target="_blank">Support Page</a></li>
 		<!--<li><a href="http://wpdeveloper.net/support" target="_blank">Support Forums</a></li>-->
-		<li><a href="http://wpdeveloper.net/plugin/wp-author-report" target="_blank">WP Author Report</a></li>
-		<li><a href="http://wpdeveloper.net/affiliate" target="_blank">Become an Affiliate</a></li>
+		<li><a href="http://wpdeveloper.net/go/WPAR-Pro" target="_blank">WP Author Report</a></li>
+		<li><a href="http://wpdeveloper.net/affiliate-area/" target="_blank">Become an Affiliate</a></li>
 		</ul>	
 		</td>
 	</tbody>

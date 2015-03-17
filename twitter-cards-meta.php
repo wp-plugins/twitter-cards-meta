@@ -3,7 +3,7 @@
  * Plugin Name: Twitter Cards Meta
  * Plugin URI: http://wpdeveloper.net/free-plugin/twitter-cards-meta/
  * Description: The Only Complete Twitter Cards Plugin in WordPress. Supports Product Card & Summary Card with Large Image. Advance Automated settings. Product Card & Summary Card with Large Image is now available as addon.
- * Version: 2.0.2
+ * Version: 2.0.3
  * Author: WPDeveloper.net
  * Author URI: http://wpdeveloper.net
  * License: GPLv2+

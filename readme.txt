@@ -4,7 +4,7 @@ Donate link: http://wpdeveloper.net/go/TCM
 Tags: Twitter Card, Summary Card, Photo Card, Summary Card with Large Image, Product Card, Twitter SEO, Twitter Meta, Twitter, Yoast, Player Cards, Product Cards, Meta,  Add Metadata, Add Twitter Meta, Social, Ecommernce Card
 Requires at least: 2.5.0
 Tested up to: 4.2
-Stable tag: 2.0.2
+Stable tag: 2.0.3
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -140,6 +140,9 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 == Changelog ==
 
+= 2.0.3 (March 17, 2015) =
+* Quick bug fix.
+
 = 2.0.2 (March 16, 2015) =
 * Product Card compatible
 * Minor Bug fix.
@@ -208,7 +211,7 @@ More FAQs - [here](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab3)
 
 == Upgrade Notice ==
 
-= 2.0.2 =
+= 2.0.3 =
 **Must Update** Fix several bugs, and now its compatible to Product Card addons.
 
 
