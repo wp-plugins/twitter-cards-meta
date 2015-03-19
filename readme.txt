@@ -18,9 +18,11 @@ The Only Complete Twitter Cards Plugin in WordPress. Supports Product Card & Sum
 
 [Twitter Cards](http://wpdeveloper.net/free-plugin/twitter-cards-meta/) increase your Twitter visibility & Brand value. And with this plugin you don't have to worry about the markup, because its very important to get the markup correct, otherwise Twitter will not accept your application.
 
+**Do you know now Twitter provide detail [Analytics](https://analytics.twitter.com/)? To get the analytics you need 'Twitter Cards Meta'.**
+
 **Twitter [Summary Card with Large Image](http://wpdeveloper.net/go/TCM-SCLI) is here!!!**
 
-**Do you know now Twitter provide detail [Analytics](https://analytics.twitter.com/)? To get the analytics you need 'Twitter Cards Meta'.**
+[youtube http://www.youtube.com/watch?v=f1q3bgKbq_U]
 
 
 Please read Twitter Cards' detail [guideline and terms](https://dev.twitter.com/docs/cards) before proceed.
@@ -105,6 +107,7 @@ You are good to go!
 
 **For more detail guide you should follow [this](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab2) page.**
 
+[youtube http://www.youtube.com/watch?v=f1q3bgKbq_U]
 
 
 == Frequently Asked Questions ==
