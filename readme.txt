@@ -107,6 +107,7 @@ You are good to go!
 
 **For more detail guide you should follow [this](http://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab2) page.**
 
+[youtube http://www.youtube.com/watch?v=f1q3bgKbq_U]
 
 
 == Frequently Asked Questions ==
