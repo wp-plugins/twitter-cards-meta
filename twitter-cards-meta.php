@@ -2,8 +2,8 @@
 /*
  * Plugin Name: Twitter Cards Meta
  * Plugin URI: http://wpdeveloper.net/free-plugin/twitter-cards-meta/
- * Description: The Only Complete Twitter Cards Plugin in WordPress. Supports Product Card & Summary Card with Large Image. Advance Automated settings. Product Card & Summary Card with Large Image is now available as addon. Works with WooCommerce as well.
- * Version: 2.0.4
+ * Description: The Only Complete Twitter Cards Plugin in WordPress. Supports Product Card & Summary Card with Large Image. Advance Automated settings. Works with WooCommerce as well.
+ * Version: 2.1.0
  * Author: WPDeveloper.net
  * Author URI: http://wpdeveloper.net
  * License: GPLv2+
@@ -327,22 +327,22 @@ if ( current_user_can( 'install_plugins' ) )
 	global $current_user ;
         $user_id = $current_user->ID;
         /* Check that the user hasn't already clicked to ignore the message */
-	if ( ! get_user_meta($user_id, 'twcm_ignore_notice203') ) {
+	if ( ! get_user_meta($user_id, 'twcm_ignore_notice210') ) {
         echo '<div class="updated"><p>'; 
-        printf(__('<b>[Notice]</b> Are you selling using <strong>WooCommerce?</strong> We just released <strong><a href="http://wpdeveloper.net/go/TCM-PCfWC" target="_blank">Twitter Product Card for WooCommerce</a> </strong> addon! This is a must have if you are using <strong>Twitter</strong>. Remember <strong>Photo Card + Summary Card = </strong> <b><a href="http://wpdeveloper.net/go/TCM-SCLI" target="_blank">Summary Card with Large Image</a></b>. <a href="%1$s">[Hide Notice]</a>'),  admin_url( 'admin.php?page=twitter-cards-meta&twcm_nag_ignore1=0' ));
+        printf(__('<strong>Hurray!</strong> We crossed <strong>25,000 Downloads</strong> for <strong><a href="http://wpdeveloper.net/go/TCM" target="_blank">Twitter Cards Meta</a></strong>! So, we are giving <strong>25 Percent Off</strong> on all AddOns, including <b><a href="http://wpdeveloper.net/go/TCM-SCLI" target="_blank">Summary Card with Large Image</a></b> &amp; <strong><a href="http://wpdeveloper.net/go/TCM-PC" target="_blank">Product Card</a></strong>. Use coupon <strong>"<em><a href="http://wpdeveloper.net/go/TCM-Addons" target="_blank">TCM25K</a></em>"</strong> during checkout! <strong>Sale Ends in 3 Days!</strong> <a href="%1$s">[Hide Notice]</a>'),  admin_url( 'admin.php?page=twitter-cards-meta&twcm_nag_ignore=0' ));
         echo "</p></div>";
 	}
     }
 }
 
-add_action('admin_init', 'twcm_nag_ignore1');
+add_action('admin_init', 'twcm_nag_ignore');
 
-function twcm_nag_ignore1() {
+function twcm_nag_ignore() {
 	global $current_user;
         $user_id = $current_user->ID;
         /* If user clicks to ignore the notice, add that to their user meta */
-        if ( isset($_GET['twcm_nag_ignore1']) && '0' == $_GET['twcm_nag_ignore1'] ) {
-             add_user_meta($user_id, 'twcm_ignore_notice203', 'true', true);
+        if ( isset($_GET['twcm_nag_ignore']) && '0' == $_GET['twcm_nag_ignore'] ) {
+             add_user_meta($user_id, 'twcm_ignore_notice210', 'true', true);
 	}
 }
 
