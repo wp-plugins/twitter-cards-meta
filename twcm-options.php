@@ -124,7 +124,7 @@ function twcm_options_page()
             </table>
             </form>
            <div style=" text-align:center; margin-top:10px;">
-			<strong>To celebrate our <strong>25,000 Downloads</strong>, we are giving <strong>25 Percent Off</strong> on all AddOns. Use coupon <strong>"<em><a href="http://wpdeveloper.net/go/TCM-Addons" target="_blank">TCM25K</a></em>"</strong>! <strong>Sale Ends on 24th April!</strong>
+			<strong>Do you need help in <a href="http://wpdeveloper.net/go/TCM-Setup" target="_blank">setting</a> up</strong> <strong><a href="http://wpdeveloper.net/go/TCM" target="_blank">Twitter Cards Meta</a>? </strong>Now we could help you <strong>Install, setup</strong>, file for card validation to Twitter, setup addon or help you fix any issue related to Twitter Card. We have a team of <strong>Avenger</strong>! <strong><a href="http://wpdeveloper.net/go/TCM-Setup" target="_blank">Click here!</a></strong>
             </div>
 
             <div style=" text-align:center; margin-top:60px;"><b>Photo Card + Summary Card = <a href="http://wpdeveloper.net/go/TCM-SCLI" target="_blank"><b>Summery Card with Large Image</b></a></b><b> [Must Have]</b><br /><a target="_blank" href="http://wpdeveloper.net/go/TCM-SCLI"><img style="border:2px solid #ffffff;" src="<?php echo TWCM_PLUGIN_URL."/example-summary-card-with-large-image.jpg" ?>" width="500" alt="Summery Card with Large Image" /></a></div>
