@@ -39,7 +39,9 @@ Please read Twitter Cards' detail [guideline and terms](https://dev.twitter.com/
 *   Player Card (coming soon)
 
 **[Twitter Cards Meta](http://wpdeveloper.net/go/TCM) [Setup Service](http://wpdeveloper.net/go/TCM-Setup)!!!** 
+
 Let us help, we have team of Avenger! We could help you setup Twitter Cards Meta. We will make your website ready for Twitter Card. You sit back and watch your Twitter grow!
+
 
 Though there are other possible ways to add Twitter Cards metadata but this plugin is the best and easiest way for Twitter Cards. We have reasons to believe so, we will explain that at the bottom of this page. Check our features first.
 
