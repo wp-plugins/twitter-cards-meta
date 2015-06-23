@@ -340,7 +340,7 @@ if ( current_user_can( 'install_plugins' ) )
 	global $current_user ;
         $user_id = $current_user->ID;
         /* Check that the user hasn't already clicked to ignore the message */
-	if ( ! get_user_meta($user_id, 'twcm_ignore_notice215') ) {
+	if ( ! get_user_meta($user_id, 'twcm_ignore_notice216') ) {
         echo '<div class="updated"><p>';
         printf(__('Do you tweet a lot? <strong><a href="https://wpdeveloper.net/go/TCM" target="_blank">Twitter Cards Meta</a> </strong>helped you making your tweet look cooler? <strong>Then, why not write us a simple 1-line thank you note <a href="https://wpdeveloper.net/go/twmc-rating" target="_blank">here</a>? Thanks in advance!</strong>
         	 <a href="%1$s">[Hide]</a>'),  admin_url( 'admin.php?page=twitter-cards-meta&twcm_nag_ignore=0' ));
@@ -356,7 +356,7 @@ function twcm_nag_ignore() {
         $user_id = $current_user->ID;
         /* If user clicks to ignore the notice, add that to their user meta */
         if ( isset($_GET['twcm_nag_ignore']) && '0' == $_GET['twcm_nag_ignore'] ) {
-             add_user_meta($user_id, 'twcm_ignore_notice215', 'true', true);
+             add_user_meta($user_id, 'twcm_ignore_notice216', 'true', true);
 	}
 }
 
