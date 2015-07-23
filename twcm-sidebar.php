@@ -13,14 +13,13 @@
             <ol>
             <li>Activate the Plugin</li>
             <li>Configure the Options</li>
-            <li><a href="https://cards-dev.twitter.com/validator" target="_blank">Click Here For Twitter Validation Page</a></li>
-            <li>Select a Card Type</li>
-            <li>Input a single post url, click "Go" and check preview</li>
-            <li>If all looks fine, apply for Approval</li>
-            <li>You will get email when Twitter approves your request*.</li>
-             *It could take 05min to Few Hr. 
+            <li>Clean your website Cache, if you have Caching plugin installed.</li>
+            <li><a href="https://wpdeveloper.net/go/Twitter-Validator" target="_blank">Click Here To Visit Twitter Validation Page</a></li>
+            <li>Input a single post/article url, click "Preview Card" and check preview</li>
+            <li>If everything looks fine, and all are marked as green, you are ready for <b>"Twitter Card"</b></li>
+            <li>Make a new post, and share as link to get your Tweet with Twitter Card support.</li>
             </ol>
-            <center><b><a href="https://wpdeveloper.net/free-plugin/twitter-cards-meta/#tab2" target="_blank">Complete Twitter Cards Setup Guide</a></b></center>
+            <center><b><a href="https://wpdeveloper.net/go/TCM-Ins" target="_blank">Complete Twitter Cards Setup Guide</a></b></center>
 		</td>
 	</tbody>
 </table>
